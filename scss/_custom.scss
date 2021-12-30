@@ -34,10 +34,27 @@ header.border-bottom.border-white{
     height: 16px;
 }
 
+// badge utilities
+.badge-section{
+    font-size: .8rem !important;
+    color: $white;
+}
+
+
+// spacing utilities
+.py-section{
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
 
 // border-radius utilities
 .rounded-xl-br{
     border-bottom-right-radius: $border-radius-xl !important;
+}
+
+.rounded-xs{
+    border-radius: .4rem;
 }
 
 // font-size utilities
@@ -59,7 +76,6 @@ header.border-bottom.border-white{
 
 // Frontpage components
 .header-frontpage{
-    position: relative;
     padding-bottom: 9.5vw;
 
     & > svg{
@@ -102,5 +118,40 @@ header.border-bottom.border-white{
 
     .payment-list-more a{
         border-bottom: 1px dashed $primary;
+
+        &:hover,
+        &:active,
+        &:focus{
+            text-decoration: none;
+        }
     }
+}
+
+.card-counters{
+    margin-top: 120px;
+    max-width: 80%;
+    position: unset; // remove relative to place picture in parent box
+
+    .card-counters-picture{
+        height: 280px;
+        right: 2rem;
+        top: 0;
+        width: 351px;
+    }
+}
+
+.btn-play{
+    left: 2rem;
+    top: 1rem;
+
+    &.btn-play-right{
+        left: unset;
+        right: 1rem;
+    }
+}
+
+.separator-dashed{
+    top: -108px;
+    left: -108px;
+    z-index: -1;
 }

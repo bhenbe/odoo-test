@@ -16,7 +16,7 @@
 <body>
 
     <!-- blue header with primary content -->
-    <div class="header-frontpage bg-primary text-white">
+    <div class="header-frontpage position-relative bg-primary text-white">
     
         <header class="container py-2 mb-2 border-bottom border-white">
 
@@ -25,7 +25,7 @@
                 <a class="navbar-brand" href="#"><img src="./assets/img/odoo-white.svg" width="91" height="30" alt="Odoo logo" /></a>
   
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    Menu
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -68,7 +68,7 @@
 
             <div class="row align-items-center my-5">
 
-                <div class="col-md-7">
+                <div class="col-lg-6 col-xl-7">
         
                     <h1 class="maxwidth-sm mb-5">Development done right</h1>
 
@@ -76,9 +76,9 @@
 
                     <p class="mb-5"><a href="#" class="btn btn-white py-3 px-4 font-weight-bold"><span class="text-sm mr-3">Get started</span> <i class="feather-14" data-feather="plus"></i></a></p>
 
-                    <div class="d-flex flex-column flex-md-row align-items-center">
+                    <div class="d-flex flex-column flex-md-row align-items-md-center">
                         <span class="text-xs">Trusted by:</span>
-                        <ul class="list-unstyled mb-0 d-inline-flex flex-column flex-md-row">
+                        <ul class="list-unstyled mb-0 d-inline-flex flex-row flex-wrap">
                             <li class="px-3 py-2"><img src="./assets/img/google-white.svg" alt="Google logo" class="img-brand-list" /></li>
                             <li class="px-3 py-2"><img src="./assets/img/spotify-white.svg" alt="Spotify logo" class="img-brand-list" /></li>
                             <li class="px-3 py-2"><img src="./assets/img/airbnb-white.svg" alt="Airbnb logo" class="img-brand-list" /></li>
@@ -88,7 +88,7 @@
 
                 </div>
 
-                <div class="col-md-5"> 
+                <div class="col-lg-6 col-xl-5 d-none d-lg-block"> 
 
                     <aside class="card card-frontpage border-0 rounded-xl-br pb-3">
                         <div class="card-body text-body">
@@ -115,7 +115,7 @@
                                         <span class="d-block">11/23</span>
                                     </div>
                                 </div>
-                            </div>
+                            </div><!-- .bank-card -->
                             <div class="payment-list">
                                 <div class="payment-list-item py-4">
                                     <div class="d-flex flex-row text-medium">
@@ -138,9 +138,9 @@
                                 <div class="payment-list-more pt-2">
                                     <a href="#" class="text-sm">View all <i class="feather-12" data-feather="chevron-right"></i></a>
                                 </div>
-                            </div>
+                            </div><!-- .payment-list -->
                         </div>
-                    </aside>
+                    </aside><!-- .card-frontpage -->
 
                 </div>
 
@@ -152,10 +152,104 @@
             <polygon fill="white" points="0,100 100,0 100,100"/>
         </svg>
 
-    </div>
+    </div><!-- .header-frontpage -->
 
-    <!-- first section -->
-    <section></section>
+    <section id="section-tool" class="container py-section">
+    
+        <div class="row align-items-center">
+
+            <div class="col-md-5 order-2">
+
+                <h2 class="mb-5">
+                    <span class="badge badge-warning badge-section rounded-pill px-3 py-2 mb-4">Tools</span> 
+                    <span class="d-block">We build for designers and developers</span>
+                </h2>
+
+                <p class="text-muted">Get components and examples, including tons of variables that will help you grow your business.</p>
+
+            </div>
+
+            <div class="col-md-7 order-1 position-relative">
+
+                <aside class="card card-counters shadow-sm">
+
+                    <div class="card-body text-medium p-5">
+
+                        <span class="d-block h5 text-medium mb-4">Awesome projects</span>
+                
+                
+                        <div class="d-flex flex-row mb-2 text-sm">
+                            <span>Create the new logo</span>
+                            <span class="ml-auto text-muted">3:50 <i class="feather-14" data-feather="chevron-right"></i></span>
+                        </div>
+                        <div class="progress mb-5">
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                
+                        <div class="d-flex flex-row mb-2 text-sm">
+                            <span>Set up the color palette</span>
+                            <span class="ml-auto text-muted">4:00 <i class="feather-14" data-feather="chevron-right"></i></span>
+                        </div>
+                        <div class="progress mb-5">
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+
+                        <div class="d-flex flex-row mb-2 text-sm">
+                            <span>Wireframe and prototype</span>
+                            <span class="ml-auto text-muted">6:50 <i class="feather-14" data-feather="chevron-right"></i></span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        
+                        <div class="card-counters-picture position-absolute">
+                            <img src="./assets/img/img_01.jpg" width="351" height="280" alt="" class="rounded shadow" />
+                            <a href="#" class="position-absolute btn-play btn-play-right btn btn-white text-xs">Play video <i class="feather-12" data-feather="play"></i></a>
+                        </div>
+
+                    </div>
+
+                </aside>
+
+            </div>
+
+        </div>
+    
+    </section><!-- #section-tool -->
+
+    <section id="section-features" class="container py-section">
+
+        <div class="row align-items-center justify-content-between">
+
+            <div class="col-md-5">
+
+                <h3 class="h4 mb-5">
+                    <span class="badge badge-info badge-section rounded-pill px-3 py-2 mb-4">Features</span> 
+                    <span class="d-block">Get components and examples, including tons of variables that will help you grow your business.</span>
+                </h3>
+
+                <p>
+                    <ul class="list-unstyled text-info text-sm">
+                        <li class="mb-3"><span class="badge badge-info text-white rounded-xs p-1 mr-2"><i class="feather-16" data-feather="check"></i></span> Perfect for modern startups</li>
+                        <li><span class="badge badge-info text-white rounded-xs p-1 mr-2"><i class="feather-16" data-feather="check"></i></span> Fully customizable and scalable</li>
+                    </ul>
+                </p>
+
+            </div>
+
+            <div class="col-md-6">
+
+                <img src="./assets/img/dashed-lines.svg" width="120" height="120" alt="" class="separator-dashed position-absolute" />
+
+                <img src="./assets/img/img_02.jpg" width="526" height="426" alt="" class="img-fluid w-100 h-auto rounded shadow" />
+
+                <a href="#" class="position-absolute btn-play btn btn-white text-xs">Play video <i class="feather-12" data-feather="play"></i></a>
+
+            </div>
+
+        </div>
+
+    </section><!-- #section-features -->
 
 
     <section></section>
