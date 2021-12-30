@@ -1,0 +1,43 @@
+// Color system
+$white: #fff;
+$gray-600: #708096;
+$gray-800: #142C5C;
+$gray-900: #151449;
+$gray-900-alt: #1D1347; // used for the bank card background
+
+$blue: #028aff;
+$cyan: #5BCAA7;
+
+$dark: $gray-800;
+
+// Body
+$body-color:                $gray-800;
+
+// Typography
+
+$font-family-sans-serif:      'Nunito Sans', sans-serif;
+$font-family-base:            $font-family-sans-serif;
+
+$font-size-base:              1.125rem;
+
+$headings-line-height:        1.4;
+$headings-font-weight:        700;
+
+
+// Navbar
+
+$navbar-padding-x:                  0;
+
+$navbar-nav-link-padding-x:         .8rem;
+
+$navbar-dark-color:                 $white;
+$navbar-dark-hover-color:           $white;
+$navbar-dark-active-color:          $white;
+
+
+// Components
+
+$border-radius:               .5rem;
+$border-radius-lg:            1rem;
+$border-radius-sm:            .25rem;
+$border-radius-xl:            5rem;
