@@ -5,11 +5,31 @@ header.border-bottom.border-white{
 }
 
 
+// link hard underline
+a.underline-hard{
+    display: inline-block;
+    text-decoration: none;
+    padding-bottom: 7px;
+    border-bottom: 3px solid $primary;
+    transition: all 200ms;
+
+    &:hover,
+    &:active, 
+    &:focus{
+        padding-bottom: 4px;
+        border-bottom: 6px solid $primary;
+    }
+}
+
+
 // button-white added in components
 .btn-white {
     @include button-variant($white, $white);
 }
 
+.btn-black {
+    @include button-variant($black, $black);
+}
 
 // Image fixed height for brand list
 .img-brand-list{
@@ -32,6 +52,16 @@ header.border-bottom.border-white{
 .feather-16{
     width: 16px;
     height: 16px;
+}
+
+.feather-18{
+    width: 18px;
+    height: 18px;
+}
+
+.feather-24{
+    width: 24px;
+    height: 24px;
 }
 
 // badge utilities
@@ -154,4 +184,29 @@ header.border-bottom.border-white{
     top: -108px;
     left: -108px;
     z-index: -1;
+
+    &.separator-dashed-invert{
+        transform: scaleX(-1);
+        left: unset;
+        right: -108px;
+    }
+}
+
+.list-avatar{
+    li{
+        margin-left: -0.5rem;
+    }
+    li:first-child{
+        margin-left: 0;
+    }
+    img{
+        border: 2px solid $white;
+    }
+}
+
+.hr-gradient{
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(224,233,240,1) 50%, rgba(255,255,255,1) 100%);
+    border-top: 0 !important;
+    height: 1px;
 }
