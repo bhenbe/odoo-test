@@ -32,6 +32,20 @@ a.underline-hard{
 }
 
 
+// animations utilities
+.animate-2{
+    transition: all .2s ease-in-out;
+}
+
+.animate-4{
+    transition: all .4s ease-in-out;
+}
+
+.scale-1{
+    transform: scale(1.1);
+}
+
+
 // background-color utilities
 .bg-dark-alt{
     background-color: $gray-900-alt !important;
@@ -245,7 +259,19 @@ a.underline-hard{
     position: relative;
 
     .carousel-element{
+        position: relative;
         min-width: 260px;
+        z-index: 1;
+
+        a:before{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 2;
+            content: '';
+        }
     }
 
     .carousel-element:nth-child(odd){
