@@ -11,7 +11,6 @@ a.underline-hard{
     text-decoration: none;
     padding-bottom: 5px;
     border-bottom: 3px solid $primary;
-    transition: all 200ms;
 
     &:hover,
     &:active, 
@@ -39,6 +38,13 @@ a.underline-hard{
 
 .animate-4{
     transition: all .4s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .animate-2,
+    .animate-4 {
+        animation: none;
+    }
 }
 
 .scale-1{
@@ -107,6 +113,14 @@ a.underline-hard{
     margin-bottom: $spacer-section;
 }
 
+.pt-section{
+    margin-top: $spacer-section;
+}
+
+.pb-section{
+    margin-bottom: $spacer-section;
+}
+
 
 // border-radius utilities
 .rounded-xl-br{
@@ -131,6 +145,10 @@ a.underline-hard{
     font-size: .8em;
 }
 
+.text-xxs{
+    font-size: .7em;
+}
+
 .text-medium{
     font-weight: 600;
 }
@@ -139,15 +157,20 @@ a.underline-hard{
     max-width: 320px;
 }
 
+.bg-dark .text-muted,
+.bg-dark-alt .text-muted{
+    color: $gray-300 !important;
+}
+
 // Frontpage components
 .header-frontpage{
-    padding-bottom: 9.5vw;
+    padding-bottom: $diagonal-height;
 
     & > svg{
         position: absolute;
         bottom: 0;
         width: 100%;
-        height: 10vw;
+        height: $diagonal-svg-height;
     }
 }
 
@@ -209,6 +232,15 @@ a.underline-hard{
     left: 2rem;
     top: 1rem;
 
+    &:before{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        content: '';
+    }
+
     &.btn-play-right{
         left: unset;
         right: 1rem;
@@ -244,8 +276,15 @@ a.underline-hard{
 }
 
 .hr-gradient{
-    background: rgb(255,255,255);
-    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(224,233,240,1) 50%, rgba(255,255,255,1) 100%);
+    background: $gray-200;
+    background: linear-gradient(90deg, $white 0%, $gray-200 50%, $white 100%);
+    border-top: 0 !important;
+    height: 1px;
+}
+
+.hr-gradient-dark-alt{
+    background: $gray-800;
+    background: linear-gradient(90deg, $gray-900-alt 0%, $gray-800 50%, $gray-900-alt 100%);
     border-top: 0 !important;
     height: 1px;
 }
@@ -280,12 +319,33 @@ a.underline-hard{
 }
 
 #section-awards{
-    padding-bottom: 9.5vw;
+    padding-bottom: $diagonal-height;
 
     & > svg{
         position: absolute;
         bottom: 0;
         width: 100%;
-        height: 10vw;
+        height: $diagonal-svg-height;
+    }
+}
+
+.faq-list .btn-white{
+    &:hover,
+    &:focus,
+    &:active{
+        background-color: $white;
+        border-color: $white;
+        color: $primary;
+    }
+}
+
+.site-footer{
+    padding-top: $diagonal-height;
+
+    & > svg{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: $diagonal-svg-height;
     }
 }

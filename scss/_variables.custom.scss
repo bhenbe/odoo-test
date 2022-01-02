@@ -1,6 +1,8 @@
 // Color system
 $white: #fff;
 $gray-100: #F8FCFF;
+$gray-200: #E8EDF4;
+$gray-300: #aab3c0;
 $gray-600: #708096;
 $gray-800: #142C5C;
 $gray-900: #151449;
@@ -12,9 +14,11 @@ $cyan: #5BCAA7;
 
 $dark: $gray-800;
 
+
 // Body
 $body-color:                $gray-800;
-
+$diagonal-height:           4.5vw;
+$diagonal-svg-height:       5vw;
 
 // spacing
 $spacer: 1rem;
@@ -49,6 +53,21 @@ $border-radius:               .5rem;
 $border-radius-lg:            1rem;
 $border-radius-sm:            .25rem;
 $border-radius-xl:            5rem;
+
+$box-shadow-sm:               0 .125rem .25rem rgba($black, .05);
+$box-shadow:                  0 .25rem .75rem rgba($black, .05);
+$box-shadow-lg:               0 1rem 3rem rgba($black, .175);
+
+
+// Buttons (need update if form needed)
+
+$btn-padding-y:               15px;
+$btn-padding-x:               30px;
+
+
+// Cards
+
+$card-border-color:                 $gray-200;
 
 
 // Progress bars
