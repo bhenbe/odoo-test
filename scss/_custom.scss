@@ -168,7 +168,7 @@ a.underline-hard{
 
     & > svg{
         position: absolute;
-        bottom: 0;
+        bottom: -1px;
         width: 100%;
         height: $diagonal-svg-height;
     }
@@ -323,7 +323,7 @@ a.underline-hard{
 
     & > svg{
         position: absolute;
-        bottom: 0;
+        bottom: -1px;
         width: 100%;
         height: $diagonal-svg-height;
     }
@@ -344,7 +344,7 @@ a.underline-hard{
 
     & > svg{
         position: absolute;
-        top: 0;
+        top: -1px;
         width: 100%;
         height: $diagonal-svg-height;
     }
